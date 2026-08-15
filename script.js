@@ -103,7 +103,15 @@ function renderProdutos(id, filtro) {
 function renderDestaques() {
   const c = $("#featured-products");
   if (!c) return;
-  c.innerHTML = produtos.slice(0, 4).map(card).join("");
+
+  const favoritos = produtos.filter(
+    (p) =>
+      p.nome === "Brownie com Nutella" ||
+      p.nome === "Torta de Frango"
+  );
+
+  c.innerHTML = favoritos.map(card).join("");
+
   c.querySelectorAll(".btn-add").forEach(
     (b) => (b.onclick = () => adicionar(b.dataset.id))
   );
