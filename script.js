@@ -170,7 +170,7 @@ function checkout() {
     return `• ${i.quantidade}x ${p.nome} — ${money(p.preco * i.quantidade)}`;
   });
 
-  let m = `Olá! Vim pelo site da *Artesanal Brownies & Tortas* 🍫💚\n\n*Nome:* ${nome}\n`;
+  let m = `Olá! Vim pelo site da *Artesanal Brownies & Tortas*\n\n*Nome:* ${nome}\n`;
   if (tel) m += `*Telefone:* ${tel}\n`;
   m += `\n*Pedido:*\n${itens.join("\n")}\n\n*TOTAL: ${money(total())}*\n`;
   if (obs) m += `\n*Observação:* ${obs}\n`;
