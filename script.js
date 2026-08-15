@@ -171,7 +171,7 @@ function checkout() {
   });
 
   let m = `Olá! Vim pelo site da *Artesanal Brownies & Tortas*\n\n*Nome:* ${nome}\n`;
-  if (tel) m += `*Telefone:* ${tel}\n`;
+ 
   m += `\n*Pedido:*\n${itens.join("\n")}\n\n*TOTAL: ${money(total())}*\n`;
   if (obs) m += `\n*Observação:* ${obs}\n`;
   m += `\nGostaria de confirmar meu pedido e combinar a entrega/retirada.`;
