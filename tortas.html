@@ -1,75 +1,163 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <title>Tortas — Artesanal Brownies & Tortas</title>
+<head>
+  <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  />
 
-  <body class="tema-torta">
+  <title>Tortas — Artesanal Brownies & Tortas</title>
 
-    <!-- HEADER -->
-    <header class="site-header">
-      <div class="container header-inner">
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-        <a href="index.html" class="brand">
-          <img
-            src="images/logo.png"
-            class="logo"
-            alt="Artesanal Brownies & Tortas"
-          />
+<body class="tema-torta">
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <div class="container header-inner">
+
+      <!-- LOGO -->
+      <a href="index.html" class="brand">
+
+        <img
+          src="images/logo.png"
+          class="logo"
+          alt="Artesanal Brownies & Tortas"
+        />
+
+      </a>
+
+
+      <!-- MENU -->
+      <nav class="nav" id="nav">
+
+        <a href="index.html">
+          Início
         </a>
 
-        <nav class="nav" id="nav">
-          <a href="index.html">Início</a>
-          <a href="cardapio.html">Cardápio</a>
-          <a href="brownies.html">Brownies</a>
-          <a class="active" href="tortas.html">Tortas</a>
-        </nav>
-
-        <a href="carrinho.html" class="cart-icon">
-          🛒 <span id="cart-count">0</span>
+        <a href="cardapio.html">
+          Cardápio
         </a>
 
-        <button class="hamburger" id="hamburger">&#9776;</button>
+        <a href="brownies.html">
+          Brownies
+        </a>
+
+        <a
+          class="active"
+          href="tortas.html"
+        >
+          Tortas
+        </a>
+
+      </nav>
+
+
+      <!-- CARRINHO -->
+      <a
+        href="carrinho.html"
+        class="cart-icon"
+      >
+        🛒
+        <span id="cart-count">0</span>
+      </a>
+
+
+      <!-- MENU MOBILE -->
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Abrir menu"
+      >
+        &#9776;
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- MAIN -->
+  <main class="container page">
+
+    <!-- CABEÇALHO DA PÁGINA -->
+    <section class="page-head">
+
+      <span class="eyebrow">
+        ARTESANAL BROWNIES & TORTAS
+      </span>
+
+      <h1>
+        Tortas Artesanais
+      </h1>
+
+      <p>
+        Tortas feitas com carinho, ingredientes selecionados
+        e aquele sabor caseiro que conquista em cada pedaço.
+      </p>
+
+    </section>
+
+
+    <!-- PRODUTOS DE TORTAS -->
+    <section
+      class="product-grid"
+      id="tortas-products"
+    ></section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <div>
+
+        <strong>
+          ARTESANAL
+        </strong>
+
+        <span>
+          BROWNIES & TORTAS
+        </span>
+
       </div>
-    </header>
 
-    <!-- MAIN -->
-    <main class="container page">
-      <section class="page-head">
-        <span class="eyebrow">ARTESANAL BROWNIES & TORTAS</span>
-        <h1>Brownies Artesanais</h1>
-        <p>
-          Densos, úmidos e com muito chocolate — nossos brownies são paixão
-          em forma de quadrado!
-        </p>
-      </section>
 
-      <section class="product-grid" id="brownies-products"></section>
-    </main>
+      <p>
+        ©
+        <span id="year"></span>
+        Artesanal Brownies & Tortas
+      </p>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>
-          <strong>ARTESANAL</strong>
-          <span>BROWNIES & TORTAS</span>
-        </div>
 
-        <p>© <span id="year"></span> Artesanal Brownies & Tortas</p>
+      <a href="cardapio.html">
+        Cardápio
+      </a>
 
-        <a href="cardapio.html">Cardápio</a>
-      </div>
-    </footer>
+    </div>
 
-    <!-- TOAST -->
-    <div id="toast" class="toast"></div>
+  </footer>
 
-    <script src="produtos.js"></script>
-    <script src="script.js"></script>
-  </body>
+
+  <!-- TOAST -->
+  <div
+    id="toast"
+    class="toast"
+  ></div>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="produtos.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
 </html>
