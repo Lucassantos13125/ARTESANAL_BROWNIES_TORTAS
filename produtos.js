@@ -5,7 +5,7 @@ const produtos = [
     categoria: "brownie",
     preco: 20.0,
     imagem: "images/brownie-tradicional.jpg",
-    emoji: "🍫",
+    emoji: "🍪",
     descricao: "Chocolate meio amargo e textura perfeita.",
   },
   {
@@ -14,7 +14,7 @@ const produtos = [
     categoria: "brownie",
     preco: 25.0,
     imagem: "images/brownie-Nutella.jpg",
-    emoji: "🍫",
+    emoji: "🍪",
     descricao: "Bem macio por dentro — com recheio de Nutella.",
   },
   {
@@ -23,7 +23,7 @@ const produtos = [
     categoria: "brownie",
     preco: 25.0,
     imagem: "images/brownie-Ninho.jpg",
-    emoji: "🥛",
+    emoji: "🍪",
     descricao: "Bem macio por dentro — com recheio de Ninho.",
   },
   {
@@ -32,7 +32,7 @@ const produtos = [
     categoria: "brownie",
     preco: 25.0,
     imagem: "images/brownie-Leite.jpg",
-    emoji: "🍯",
+    emoji: "🍪",
     descricao: "Bem macio por dentro — com recheio de doce de leite.",
   },
   {
